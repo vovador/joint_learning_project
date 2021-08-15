@@ -1,0 +1,27 @@
+.nav {
+
+&__list {
+    display: flex;
+
+    gap: 24px;
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+    &__item {
+        &:not(:last-child):after {
+            content: "";
+            position: relative;
+            left: calc(100% + 12px);
+            bottom: 50%;
+            display: block;
+            width: 2px;
+            height: 24px;
+
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 54px 19px 55px;
+  background-color: #007765;
+}
+
+.nav__list {
+  display: flex;
+  gap: 24px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+.nav__item:not(:last-child):after {
+  content: "";
+  position: relative;
+  left: calc(100% + 12px);
+  bottom: 50%;
+  display: block;
+  width: 2px;
+  height: 24px;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */
